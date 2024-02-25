@@ -1,4 +1,5 @@
 # Capture Sayo Device keystrokes.
+This example program captures keystrokes from a Sayo 2x6 keypad and then executes a shell script that uses xdotool to send keystrokes to the object with focus.  It is intended to provide a complete example of how this is done on Xubuntu 22.04 including the necessary permissions and XServer modifications required to both access the device and prevent its default keyboard interface from being processed by the OS.  URLs are listed for websites that provided information that was used to create the instructions below.  These instructions pertain specifically to the use of a 2x6 SayoDevice on Xubuntu 22.04 using python and xdotool.
 
 # SAYO Device
 A Sayo  Device is a small HID USB keyboard used to execute macros.
