@@ -28,7 +28,7 @@ NOTE: In the above example, 3 is the BUS number and 9 is the ID.
 ### Get X Server to Ignore Device
 Use the following command to get the device name:
 ```
-DISPLAY:=0.0 xinput list
+DISPLAY=:0.0 xinput list
 ```
 Then execute this script to ignore the input from the device:
 ```
