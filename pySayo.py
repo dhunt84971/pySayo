@@ -88,7 +88,7 @@ This devices has the following values:
 import subprocess
 from evdev import InputDevice, ecodes
 
-device = InputDevice("/dev/input/event23")
+device = InputDevice("/dev/input/event5")
 for event in device.read_loop():
     if event.type == ecodes.EV_KEY:
         if(event.code == 7 and event.value == 0 ):
@@ -116,4 +116,4 @@ for event in device.read_loop():
           print('Key 1,4')
         if(event.code == 8 and event.value == 0 ):
           print('Key 1,5')
-          subprocess.call(['sh', '/home/dave/keymacro.sh'])
+          subprocess.call(['sh', './keymacro.sh'])
